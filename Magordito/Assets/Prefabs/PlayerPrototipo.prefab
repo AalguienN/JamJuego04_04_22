@@ -53,6 +53,10 @@ MonoBehaviour:
   r_key: d
   l_key: a
   s_key: r
+  maxUp: -5.5
+  maxDown: -15
+  maxRight: 45
+  maxLeft: -19
   speed: 2
   spriteRender: {fileID: 2505088474669207310}
   objetosExtra: {fileID: 4018053175079718208}

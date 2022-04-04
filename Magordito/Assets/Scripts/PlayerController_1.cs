@@ -15,7 +15,7 @@ public class PlayerController_1 : MonoBehaviour
     public string r_key;  //right key
     public string l_key;  //left key
     public string s_key;  //left key
-    [Header("Terreno")]
+    [Header("Zona del Terreno")]
     public float maxUp;
     public float maxDown;
     public float maxRight;
