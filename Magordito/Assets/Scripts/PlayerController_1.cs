@@ -5,12 +5,16 @@ using UnityEngine;
 public class PlayerController_1 : MonoBehaviour
 {
     private Vector3 move_vector;
+    public GameObject bal;
+   
+    public Vector3 movement;
     [Header("CONTROLES . . . . ")]
     [Header("Movimiento")]
     public string u_key;  //up key    
     public string d_key;  //down key
     public string r_key;  //right key
     public string l_key;  //left key
+    public string s_key;  //left key
     [Header("Constantes")]
     public float speed;
 
@@ -28,9 +32,10 @@ public class PlayerController_1 : MonoBehaviour
         if (Input.GetKey(d_key) || Input.GetKey(d_key.ToLower())) { move_vector.z -= 1; }
         if (Input.GetKey(r_key) || Input.GetKey(r_key.ToLower())) { move_vector.x += 1; }
         if (Input.GetKey(l_key) || Input.GetKey(l_key.ToLower())) { move_vector.x -= 1; }
+        if (Input.GetKeyDown(s_key) || Input.GetKeyDown(s_key.ToLower())) { Instantiate(bal, transform.position,transform.rotation); }
 
         //Accion
         transform.Translate(move_vector * Time.deltaTime * speed);
-
+        movement = move_vector;
     }
 }
