@@ -4,21 +4,26 @@ using UnityEngine;
 
 public class GameStateScr : MonoBehaviour
 {
-    public int nPlayers;
-    public int[] vidasPlayers;
-    public int[] puntosPlayers;
+    private int vidasPlayer;
+    private int puntosPlayer;
 
     [Header("Constantes")]
     public int vidasMax;
+    public int pointsToWin;
     private void Start()
     {
-        vidasPlayers = new int[nPlayers];
-        puntosPlayers = new int[nPlayers];
-
-        for (int i = 0; i < nPlayers; i++)
-        {
-            vidasPlayers[i] = vidasMax;
-            puntosPlayers[i] = 0;
-        }
+        vidasPlayer = vidasMax;
+        puntosPlayer = 0;
     }
+    public void damagePlayer() {
+        vidasPlayer--;
+    }
+    public void addPoint() {
+        puntosPlayer++;
+    }
+    public int getVidaPlayer() {
+        return vidasPlayer;
+    }
+
+
 }
