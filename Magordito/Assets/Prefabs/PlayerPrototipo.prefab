@@ -52,7 +52,7 @@ MonoBehaviour:
   r_key: d
   l_key: a
   s_key: r
-  speed: 1
+  speed: 2
 --- !u!135 &5030715233570125686
 SphereCollider:
   m_ObjectHideFlags: 0
