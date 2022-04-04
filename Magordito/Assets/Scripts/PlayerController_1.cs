@@ -17,6 +17,9 @@ public class PlayerController_1 : MonoBehaviour
     public string s_key;  //left key
     [Header("Constantes")]
     public float speed;
+    [Header("Visual")]
+    public GameObject spriteRender;
+    public GameObject objetosExtra;
 
 
     private void Start()
@@ -37,5 +40,14 @@ public class PlayerController_1 : MonoBehaviour
         //Accion
         transform.Translate(move_vector * Time.deltaTime * speed);
         movement = move_vector;
+        if (move_vector.x < 0) {
+            objetosExtra.transform.rotation = Quaternion.Euler(0, 180, 0);
+            spriteRender.GetComponent<SpriteRenderer>().flipX = true;
+        }
+        if (move_vector.x > 0) {
+            objetosExtra.transform.rotation = Quaternion.Euler(0, 0, 0);
+            spriteRender.GetComponent<SpriteRenderer>().flipX = false;
+        }
+
     }
 }
