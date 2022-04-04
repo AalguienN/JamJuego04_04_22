@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 297166596432278857}
   - component: {fileID: 297166596432278856}
+  - component: {fileID: 1159890250}
   m_Layer: 0
   m_Name: GameManagement
   m_TagString: GameController
@@ -43,5 +44,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e12c55975bc2fd4e915e7ad6974b2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vidasMax: 0
+  vidasMax: 3
   pointsToWin: 0
+--- !u!114 &1159890250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297166596432278854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfb3fdcc68473ab41a03d5544caacaa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

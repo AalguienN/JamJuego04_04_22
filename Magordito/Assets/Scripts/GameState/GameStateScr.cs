@@ -24,6 +24,7 @@ public class GameStateScr : MonoBehaviour
     public int getVidaPlayer() {
         return vidasPlayer;
     }
+    public int getPoints() { return puntosPlayer; }
 
 
 }

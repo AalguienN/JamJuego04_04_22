@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class ObjetoCorrompidoScr : MonoBehaviour
 {
-    public void onClick()
+    private GameStateScr gs;
+    private void Start()
+    {
+        gs = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameStateScr>();
+    }
+    
+    public void OnClick()
     {
         Debug.Log("Lo has encontrado");
+        gs.addPoint();
     }
+    
 }
