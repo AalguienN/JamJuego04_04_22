@@ -15,6 +15,11 @@ public class PlayerController_1 : MonoBehaviour
     public string r_key;  //right key
     public string l_key;  //left key
     public string s_key;  //left key
+    [Header("Terreno")]
+    public float maxUp;
+    public float maxDown;
+    public float maxRight;
+    public float maxLeft;
     [Header("Constantes")]
     public float speed;
     [Header("Visual")]
@@ -31,10 +36,15 @@ public class PlayerController_1 : MonoBehaviour
         move_vector.x = 0;
         move_vector.z = 0;
         //Input
-        if (Input.GetKey(u_key) || Input.GetKey(u_key.ToLower())) { move_vector.z += 0.5f; }
-        if (Input.GetKey(d_key) || Input.GetKey(d_key.ToLower())) { move_vector.z -= 0.5f; }
-        if (Input.GetKey(r_key) || Input.GetKey(r_key.ToLower())) { move_vector.x += 1; }
-        if (Input.GetKey(l_key) || Input.GetKey(l_key.ToLower())) { move_vector.x -= 1; }
+        if (transform.position.z <= maxUp)
+            if (Input.GetKey(u_key) || Input.GetKey(u_key.ToLower())) { move_vector.z += 0.5f; }
+        if (transform.position.z >= maxDown)
+            if (Input.GetKey(d_key) || Input.GetKey(d_key.ToLower())) { move_vector.z -= 0.5f; }
+        if (transform.position.x <= maxRight)
+            if (Input.GetKey(r_key) || Input.GetKey(r_key.ToLower())) { move_vector.x += 1; }
+        if (transform.position.x >= maxLeft)
+            if (Input.GetKey(l_key) || Input.GetKey(l_key.ToLower())) { move_vector.x -= 1; }
+
         if (Input.GetKeyDown(s_key) || Input.GetKeyDown(s_key.ToLower())) { Instantiate(bal, transform.position,transform.rotation); }
 
         //Accion
