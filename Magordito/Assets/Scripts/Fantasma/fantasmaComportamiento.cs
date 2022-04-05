@@ -8,6 +8,8 @@ public class fantasmaComportamiento : MonoBehaviour
     private GameObject player;
     public float speed;
     private GameStateScr gs;
+    public GameObject explo;
+
 
     private int hp = 3;
     // Start is called before the first frame update
@@ -16,6 +18,7 @@ public class fantasmaComportamiento : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         changeDir();
         gs = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameStateScr>();
+        Instantiate(explo, transform.position, transform.rotation);
     }
 
     // Update is called once per frame
@@ -36,6 +39,7 @@ public class fantasmaComportamiento : MonoBehaviour
     }
     public void OnClick() {
         hp--;
+        Instantiate(explo, transform.position, transform.rotation);
 
         if (hp <= 0)
         {
