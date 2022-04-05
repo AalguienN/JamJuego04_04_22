@@ -5,6 +5,7 @@ using UnityEngine;
 public class ObjetoCorrompidoScr : MonoBehaviour
 {
     private GameStateScr gs;
+    public GameObject fantasma;
     private void Start()
     {
         gs = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameStateScr>();
@@ -14,6 +15,8 @@ public class ObjetoCorrompidoScr : MonoBehaviour
     {
         Debug.Log("Lo has encontrado");
         gs.addPoint();
+        Instantiate(fantasma, transform.position, transform.rotation);
+        Destroy(this.gameObject);
     }
     
 }
