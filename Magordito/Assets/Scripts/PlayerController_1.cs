@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class PlayerController_1 : MonoBehaviour
 {
-    private Vector3 move_vector;
+    public Vector3 move_vector;
     public GameObject bal;
+    private Animator an;
+    private bool move=false;
    
     public Vector3 movement;
     [Header("CONTROLES . . . . ")]
@@ -30,9 +32,11 @@ public class PlayerController_1 : MonoBehaviour
     private void Start()
     {
         move_vector = new Vector3(0, 0, 0);
+        an = GetComponent<Animator>();
     }
     private void Update()
     {
+       
         move_vector.x = 0;
         move_vector.z = 0;
         //Input
@@ -48,6 +52,16 @@ public class PlayerController_1 : MonoBehaviour
         if (Input.GetKeyDown(s_key) || Input.GetKeyDown(s_key.ToLower())) { Instantiate(bal, transform.position,transform.rotation); }
 
         //Accion
+        if (move_vector == Vector3.zero)
+        {
+            move = true;
+        }
+        else
+        {
+            move = false;
+        }
+        an.SetBool("Quieto", move);
+        an.SetFloat("V", Mathf.Abs(move_vector.x) + Mathf.Abs(move_vector.z));
         transform.Translate(move_vector * Time.deltaTime * speed);
         movement = move_vector;
         if (move_vector.x < 0) {
