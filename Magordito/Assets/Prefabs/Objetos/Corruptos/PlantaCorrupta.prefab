@@ -71,6 +71,10 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 1.56
       objectReference: {fileID: 0}
+    - target: {fileID: 6531056105332106268, guid: d4e03246228343e44bb720753c398e67, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6805094115900420270, guid: d4e03246228343e44bb720753c398e67, type: 3}
       propertyPath: m_Name
       value: PlantaCorrupta
