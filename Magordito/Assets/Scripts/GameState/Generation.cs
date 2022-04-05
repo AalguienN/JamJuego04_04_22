@@ -15,13 +15,14 @@ public class Generation : MonoBehaviour
 
     [Header("Posiciones especiales")]
     public Vector3 sofaPos;
+    public Vector3 percheroPos;
 
     // Start is called before the first frame update
     void Start()
     {
         numOC = GetComponent<GameStateScr>().pointsToWin;
         ga = gameObject.GetComponent<GameAssets>();
-        if (rand(2))
+        if (rand(4))
         {
             Instantiate(ga.SofaC, sofaPos, new Quaternion(0, 0, 0, 0));
             numOC--;
@@ -30,6 +31,15 @@ public class Generation : MonoBehaviour
         {
             Instantiate(ga.SofaN, sofaPos, new Quaternion(0, 0, 0, 0));
         }
+        if (rand(4))
+        {
+            Instantiate(ga.PercheroC, percheroPos, new Quaternion(0, 0, 0, 0));
+            numOC--;
+        }
+        else
+        {
+            Instantiate(ga.PercheroN, percheroPos, new Quaternion(0, 0, 0, 0));
+        }
         Generate();
     }
 
@@ -37,14 +47,14 @@ public class Generation : MonoBehaviour
     void Generate() {
         objetosCargados = new GameObject[objPositions.Length];
         for (int i = 0; i < objPositions.Length; i++) {
-            if (Random.Range(0, 2) == 1 && numOC > 0 || i+numOC>=objPositions.Length)
+            if (Random.Range(0, 2) == 1 && numOC > 0 || i+numOC+1>=objPositions.Length)
             {
-                Instantiate(gameObject.GetComponent<GameAssets>().objetosCorruptos[Random.Range(0, 5)], objPositions[i], new Quaternion(0, 0, 0, 0));
+                Instantiate(gameObject.GetComponent<GameAssets>().objetosCorruptos[Random.Range(0, gameObject.GetComponent<GameAssets>().objetosCorruptos.Length)], objPositions[i], new Quaternion(0, 0, 0, 0));
                 numOC--;
             }
             else
             {
-                Instantiate(gameObject.GetComponent<GameAssets>().objetosNormales[Random.Range(0, 5)], objPositions[i], new Quaternion(0, 0, 0, 0));
+                Instantiate(gameObject.GetComponent<GameAssets>().objetosNormales[Random.Range(0, gameObject.GetComponent<GameAssets>().objetosNormales.Length)], objPositions[i], new Quaternion(0, 0, 0, 0));
             }
         }
     }

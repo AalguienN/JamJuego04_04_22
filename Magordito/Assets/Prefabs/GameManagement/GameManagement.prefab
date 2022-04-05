@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e12c55975bc2fd4e915e7ad6974b2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enpausa: 0
   pausaa: {fileID: 0}
   settingss: {fileID: 0}
   panel: {fileID: 0}
@@ -111,11 +112,12 @@ MonoBehaviour:
   numObj: 5
   objPositions:
   - {x: -10, y: 1, z: 10}
-  - {x: -45, y: 1, z: 20}
+  - {x: -37.5, y: 1, z: 20}
   - {x: 17.5, y: 1, z: 10}
   - {x: 25, y: 1, z: 10}
   - {x: 32, y: 1, z: 10}
   - {x: 40, y: 1, z: 10}
   - {x: -17.5, y: 1, z: 10}
   - {x: -25, y: 1, z: 13}
-  sofaPos: {x: 3, y: 1, z: 10}
+  sofaPos: {x: 3, y: 1, z: 12}
+  percheroPos: {x: -45, y: 1, z: 20}

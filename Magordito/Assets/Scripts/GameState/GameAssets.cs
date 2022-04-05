@@ -27,25 +27,24 @@ public class GameAssets : MonoBehaviour
     public GameObject PercheroN;
     public GameObject MesitaN;
     public GameObject CofreN;
+
     private void Awake()
     {
-        objetosCorruptos = new GameObject[8];
+        objetosCorruptos = new GameObject[7];
         objetosCorruptos[0] = CalabazaC;
         objetosCorruptos[1] = CalderoC;
         objetosCorruptos[2] = MesaC;
         objetosCorruptos[3] = PlantaC;
         objetosCorruptos[4] = TelefonoC;
-        objetosCorruptos[5] = PercheroC;
-        objetosCorruptos[6] = MesitaC;
-        objetosCorruptos[7] = CofreC;
-        objetosNormales = new GameObject[8];
+        objetosCorruptos[5] = MesitaC;
+        objetosCorruptos[6] = CofreC;
+        objetosNormales = new GameObject[7];
         objetosNormales[0] = CalabazaN;
         objetosNormales[1] = CalderoN;
         objetosNormales[2] = MesaN;
         objetosNormales[3] = PlantaN;
         objetosNormales[4] = TelefonoN;
-        objetosNormales[5] = PercheroN;
-        objetosNormales[6] = MesitaN;
-        objetosNormales[7] = CofreN;
+        objetosNormales[5] = MesitaN;
+        objetosNormales[6] = CofreN;
     }
 }
