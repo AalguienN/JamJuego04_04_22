@@ -30,6 +30,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 0.6564083, y: 0.6564083, z: 0.6564083}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6970358414982837198}
   m_Father: {fileID: 2215768163466045906}
@@ -46,6 +47,7 @@ SpriteRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -154,6 +156,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.73, y: 3, z: -1.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1323121895204481017}
   m_RootOrder: 0
@@ -231,6 +234,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1477902266, guid: 28845e660c11f9448951ddc92e6b71ab, type: 3}
+      propertyPath: fantasma
+      value: 
+      objectReference: {fileID: 1882786117497362586, guid: 3e8c15bc80b148c469fd599a098b6e5e, type: 3}
     - target: {fileID: 3052182118015412569, guid: 28845e660c11f9448951ddc92e6b71ab, type: 3}
       propertyPath: m_RootOrder
       value: 0

@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1477902266, guid: 28845e660c11f9448951ddc92e6b71ab, type: 3}
+      propertyPath: fantasma
+      value: 
+      objectReference: {fileID: 2664152179972092886, guid: ba0e2a094a3eeb24a80692e915abb11e, type: 3}
     - target: {fileID: 3052182118015412569, guid: 28845e660c11f9448951ddc92e6b71ab, type: 3}
       propertyPath: m_RootOrder
       value: 0

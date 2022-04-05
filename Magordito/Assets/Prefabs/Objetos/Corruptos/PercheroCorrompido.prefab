@@ -80,6 +80,10 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 4.74
       objectReference: {fileID: 0}
+    - target: {fileID: 1477902266, guid: 28845e660c11f9448951ddc92e6b71ab, type: 3}
+      propertyPath: fantasma
+      value: 
+      objectReference: {fileID: 1976491195177906928, guid: 51fe7b2217130874796f6c1ee46073e0, type: 3}
     - target: {fileID: 3052182118015412569, guid: 28845e660c11f9448951ddc92e6b71ab, type: 3}
       propertyPath: m_RootOrder
       value: 0

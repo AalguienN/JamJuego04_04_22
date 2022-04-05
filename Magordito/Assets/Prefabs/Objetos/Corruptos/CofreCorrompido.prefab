@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1477902266, guid: 28845e660c11f9448951ddc92e6b71ab, type: 3}
+      propertyPath: fantasma
+      value: 
+      objectReference: {fileID: 6017382964123252071, guid: 9a6da2dff13aa0c4d9d4fb6285e1d890, type: 3}
     - target: {fileID: 3052182118015412569, guid: 28845e660c11f9448951ddc92e6b71ab, type: 3}
       propertyPath: m_RootOrder
       value: 0
