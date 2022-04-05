@@ -7,7 +7,7 @@ public class GameStateScr : MonoBehaviour
 {
     private int vidasPlayer;
     private int puntosPlayer;
-    private bool enpausa=false;
+    public bool enpausa=false;
     private bool ensettings = false;
     public GameObject pausaa;
     public GameObject settingss;

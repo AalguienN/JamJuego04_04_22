@@ -83,6 +83,9 @@ MonoBehaviour:
   PlantaC: {fileID: 8720830133980203600, guid: 0ccb608cf466d0348b7708b6b14bb0ef, type: 3}
   TelefonoC: {fileID: 756394719486230028, guid: e43398f432a970648b7c7ada997cc2af, type: 3}
   SofaC: {fileID: 4663998481198338801, guid: 12370d93effd06844903a17d1bb9f8f9, type: 3}
+  PercheroC: {fileID: 4726127810105912040, guid: b565b7b689ee4734e959aaa41b8866a3, type: 3}
+  MesitaC: {fileID: 4881728272333837701, guid: f902c4ddcfaf51c409e6d518ce0ee4d0, type: 3}
+  CofreC: {fileID: 7892548351687339712, guid: dc82c65b9535bba40a8353a1034298a0, type: 3}
   objetosNormales: []
   CalabazaN: {fileID: 6082613492392591474, guid: 008481d3e7fecc44eb0d6a71af612aea, type: 3}
   CalderoN: {fileID: 7900724720643314258, guid: dcdea3eb9552ce04696dabf57175de11, type: 3}
@@ -90,6 +93,9 @@ MonoBehaviour:
   PlantaN: {fileID: 7568441277126066159, guid: 6b67741a44c85d946930bc84ab96cb38, type: 3}
   TelefonoN: {fileID: 7315863729460928237, guid: 7b3faca85e0bafe4fb5fe5d24b24f3ff, type: 3}
   SofaN: {fileID: 2644532661692532939, guid: bda5057aa1e80eb46afe6edb529b5f7e, type: 3}
+  PercheroN: {fileID: 7991713296504986521, guid: 1ea0504d672b0d143b63e673d3577735, type: 3}
+  MesitaN: {fileID: 4603537557048539624, guid: 2e23111ba86befc468529de96815c87b, type: 3}
+  CofreN: {fileID: 6764203104136617636, guid: 011985046f388f6428cc99a721d2b2ca, type: 3}
 --- !u!114 &1198727680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,12 +110,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numObj: 5
   objPositions:
-  - {x: -10, y: 2, z: 10}
-  - {x: -40, y: 2, z: 10}
-  - {x: 17.5, y: 2, z: 10}
-  - {x: 25, y: 2, z: 10}
-  - {x: 32, y: 2, z: 10}
-  - {x: 40, y: 2, z: 10}
-  - {x: -20, y: 2, z: 10}
-  - {x: -25, y: 2, z: 13}
+  - {x: -10, y: 1, z: 10}
+  - {x: -45, y: 1, z: 20}
+  - {x: 17.5, y: 1, z: 10}
+  - {x: 25, y: 1, z: 10}
+  - {x: 32, y: 1, z: 10}
+  - {x: 40, y: 1, z: 10}
+  - {x: -17.5, y: 1, z: 10}
+  - {x: -25, y: 1, z: 13}
   sofaPos: {x: 3, y: 1, z: 10}
