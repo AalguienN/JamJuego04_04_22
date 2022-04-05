@@ -104,7 +104,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numObj: 5
   objPositions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  sofaPos: {x: 0, y: 0, z: 0}
+  - {x: -10, y: 2, z: 10}
+  - {x: -40, y: 2, z: 10}
+  - {x: 17.5, y: 2, z: 10}
+  - {x: 25, y: 2, z: 10}
+  - {x: 32, y: 2, z: 10}
+  - {x: 40, y: 2, z: 10}
+  - {x: -20, y: 2, z: 10}
+  - {x: -25, y: 2, z: 13}
+  sofaPos: {x: 3, y: 1, z: 10}
