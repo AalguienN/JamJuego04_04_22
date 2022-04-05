@@ -67,6 +67,7 @@ public class PlayerController_1 : MonoBehaviour
         if (move_vector.x < 0) {
             objetosExtra.transform.rotation = Quaternion.Euler(0, 180, 0);
             spriteRender.GetComponent<SpriteRenderer>().flipX = true;
+            
         }
         if (move_vector.x > 0) {
             objetosExtra.transform.rotation = Quaternion.Euler(0, 0, 0);
