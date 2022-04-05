@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 297166596432278857}
   - component: {fileID: 297166596432278856}
   - component: {fileID: 1159890250}
+  - component: {fileID: 5809194997658902377}
   m_Layer: 0
   m_Name: GameManagement
   m_TagString: GameController
@@ -44,6 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e12c55975bc2fd4e915e7ad6974b2bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pausaa: {fileID: 0}
+  settingss: {fileID: 0}
+  panel: {fileID: 0}
   vidasMax: 3
   pointsToWin: 0
 --- !u!114 &1159890250
@@ -58,3 +62,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfb3fdcc68473ab41a03d5544caacaa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5809194997658902377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297166596432278854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eda6c62728dbd034c9e7abd5e01eb3f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CalabazaC: {fileID: 1719959163224566207, guid: a8ebe45f10775de468104573c97c43aa, type: 3}
+  CalderoC: {fileID: 6805094115900420270, guid: d4e03246228343e44bb720753c398e67, type: 3}
+  MesaC: {fileID: 5054422058989880602, guid: 1f07418b22242ca43817839d8678faf7, type: 3}
+  PlantaC: {fileID: 8720830133980203600, guid: 0ccb608cf466d0348b7708b6b14bb0ef, type: 3}
+  TelefonoC: {fileID: 756394719486230028, guid: e43398f432a970648b7c7ada997cc2af, type: 3}
+  CalabazaN: {fileID: 6082613492392591474, guid: 008481d3e7fecc44eb0d6a71af612aea, type: 3}
+  CalderoN: {fileID: 7900724720643314258, guid: dcdea3eb9552ce04696dabf57175de11, type: 3}
+  MesaN: {fileID: 6198712085270158039, guid: 6bfb8810c96009d4b9d52618b3cd4184, type: 3}
+  PlantaN: {fileID: 7568441277126066159, guid: 6b67741a44c85d946930bc84ab96cb38, type: 3}
+  TelefonoN: {fileID: 7315863729460928237, guid: 7b3faca85e0bafe4fb5fe5d24b24f3ff, type: 3}
