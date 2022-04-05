@@ -1111,6 +1111,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pausa
       objectReference: {fileID: 0}
+    - target: {fileID: 2178293977537837570, guid: 67f6806986f682b4a9e02a8143fe7649, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2178293977537837582, guid: 67f6806986f682b4a9e02a8143fe7649, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1193,6 +1197,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2178293977537837582, guid: 67f6806986f682b4a9e02a8143fe7649, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2178293977777749678, guid: 67f6806986f682b4a9e02a8143fe7649, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

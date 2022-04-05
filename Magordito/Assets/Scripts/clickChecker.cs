@@ -11,26 +11,30 @@ public class clickChecker : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && !GetComponent<GameStateScr>().enpausa)
+        if (!GetComponent<GameStateScr>().enpausa)
         {
-            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, 100))
+            if (Input.GetMouseButtonDown(0))
             {
-                switch (hit.collider.tag) {
-                    case "ObjetoNormal":
-                        hit.collider.gameObject.GetComponent<ObjetoNormal>().OnClick();
-                        break;
-                    case "ObjetoCorrompido":
-                        hit.collider.gameObject.GetComponent<ObjetoCorrompidoScr>().OnClick();
-                        break;
-                    default:
-                        Debug.Log("Ray Cast : Objeto SinTag");
-                        break;
-                
+                var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+
+                if (Physics.Raycast(ray, out hit, 100))
+                {
+                    switch (hit.collider.tag)
+                    {
+                        case "ObjetoNormal":
+                            hit.collider.gameObject.GetComponent<ObjetoNormal>().OnClick();
+                            break;
+                        case "ObjetoCorrompido":
+                            hit.collider.gameObject.GetComponent<ObjetoCorrompidoScr>().OnClick();
+                            break;
+                        default:
+                            Debug.Log("Ray Cast : Objeto SinTag");
+                            break;
+
+                    }
+                    Debug.Log(gm.getVidaPlayer() + "::::" + gm.getPoints() + "/" + gm.pointsToWin); ///Linea COMENTABLE AAAAAAAAAAAAAAAA
                 }
-                Debug.Log(gm.getVidaPlayer() +"::::"+ gm.getPoints() + "/" + gm.pointsToWin); ///Linea COMENTABLE AAAAAAAAAAAAAAAA
             }
         }
     }
