@@ -43,4 +43,9 @@ public class Menú : MonoBehaviour
     {
         Application.Quit();
     }
+    public void LoadCreditos()
+    {
+        SceneManager.UnloadScene(0);
+        SceneManager.LoadScene(2);
+    }
 }
