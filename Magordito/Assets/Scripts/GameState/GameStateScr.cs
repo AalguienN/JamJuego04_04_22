@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class GameStateScr : MonoBehaviour
 {
     private int vidasPlayer;
     private int puntosPlayer;
+    public int highscore;
+    public Text text;
     public bool enpausa=false;
     private bool ensettings = false;
     public GameObject pausaa;
@@ -19,11 +23,12 @@ public class GameStateScr : MonoBehaviour
     private void Start()
     {
         vidasPlayer = vidasMax;
-        puntosPlayer = 0;
+        puntosPlayer = 0+ PlayerPrefs.GetInt("LastScore"); ;
     }
     private void PlayerDead() { 
     
     }
+    
     public void damagePlayer() {
         vidasPlayer--;
         if (vidasPlayer <= 0) PlayerDead();
@@ -42,6 +47,17 @@ public class GameStateScr : MonoBehaviour
         {
             pausa();
         }
+        PlayerPrefs.GetInt("highscore", highscore);
+        if (puntosPlayer > highscore)
+        {
+
+            highscore = puntosPlayer;
+            
+
+            PlayerPrefs.SetInt("highscore", highscore);
+        }
+        text.text = "" + puntosPlayer;
+
     }
     public void pausa()
     {
@@ -63,6 +79,14 @@ public class GameStateScr : MonoBehaviour
     }
     public void loadMenu()
     {
+        if (puntosPlayer > highscore)
+        {
+
+            highscore = puntosPlayer;
+
+
+            PlayerPrefs.SetInt("highscore", highscore);
+        }
         SceneManager.LoadScene(0);
     }
     public void settings()
