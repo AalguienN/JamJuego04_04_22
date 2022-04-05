@@ -6,14 +6,16 @@ public class Generation : MonoBehaviour
 {
     public int numObj;
     private int numOC; //Numero de objetos corrompidos
-    
+
+    private int[] posCorr;
     public Vector3[] objPositions;
     public GameObject[] objetosCargados;
 
     // Start is called before the first frame update
     void Start()
     {
-        numOC = gameObject.GetComponent<GameStateScr>().pointsToWin;
+        
+        
         Generate();
     }
 
@@ -21,10 +23,14 @@ public class Generation : MonoBehaviour
     void Generate() {
         objetosCargados = new GameObject[objPositions.Length];
         for (int i = 0; i < objPositions.Length; i++) {
-            
-            Instantiate(gameObject.GetComponent<GameAssets>().objetosNormales[Random.Range(0, 5)], objPositions[i], new Quaternion(0, 0, 0, 0));
-        }    
+            if(Random.Range(0,2) == 1)
+                Instantiate(gameObject.GetComponent<GameAssets>().objetosNormales[Random.Range(0, 5)], objPositions[i], new Quaternion(0, 0, 0, 0));
+            else
+                Instantiate(gameObject.GetComponent<GameAssets>().objetosCorruptos[Random.Range(0, 5)], objPositions[i], new Quaternion(0, 0, 0, 0));
+
+        }
     }
+
     
 
 
