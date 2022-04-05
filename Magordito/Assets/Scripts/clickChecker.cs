@@ -7,7 +7,7 @@ public class clickChecker : MonoBehaviour
     GameStateScr gm;
     private void Start()
     {
-        gm = GameObject.Find("GameManagement").GetComponent<GameStateScr>();
+        gm = gameObject.GetComponent<GameStateScr>();
     }
     private void Update()
     {
