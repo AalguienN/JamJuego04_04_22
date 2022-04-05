@@ -36,7 +36,8 @@ public class PlayerController_1 : MonoBehaviour
     }
     private void Update()
     {
-       
+       if (Input.GetKey(KeyCode.Mouse0)) an.SetBool("Click", true);
+       else an.SetBool("Click", false);
         move_vector.x = 0;
         move_vector.z = 0;
         //Input
