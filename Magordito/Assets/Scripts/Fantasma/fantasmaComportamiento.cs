@@ -7,11 +7,15 @@ public class fantasmaComportamiento : MonoBehaviour
     private Vector3 dir;
     private GameObject player;
     public float speed;
+    private GameStateScr gs;
+
+    private int hp = 3;
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         changeDir();
+        gs = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameStateScr>();
     }
 
     // Update is called once per frame
@@ -29,5 +33,14 @@ public class fantasmaComportamiento : MonoBehaviour
 
     private void changeDir() {
         dir = new Vector3(Random.Range(-3, 4), Random.Range(-3, 4), 0);
+    }
+    public void OnClick() {
+        hp--;
+
+        if (hp <= 0)
+        {
+            gs.addPoint();
+            Destroy(this.gameObject);
+        }
     }
 }

@@ -28,6 +28,9 @@ public class clickChecker : MonoBehaviour
                         case "ObjetoCorrompido":
                             hit.collider.gameObject.GetComponent<ObjetoCorrompidoScr>().OnClick();
                             break;
+                        case "Fantasma":
+                            hit.collider.gameObject.GetComponent<fantasmaComportamiento>().OnClick();
+                            break;
                         default:
                             Debug.Log("Ray Cast : Objeto SinTag");
                             break;
