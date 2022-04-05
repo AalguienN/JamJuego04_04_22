@@ -21,8 +21,12 @@ public class GameStateScr : MonoBehaviour
         vidasPlayer = vidasMax;
         puntosPlayer = 0;
     }
+    private void PlayerDead() { 
+    
+    }
     public void damagePlayer() {
         vidasPlayer--;
+        if (vidasPlayer <= 0) PlayerDead();
     }
     public void addPoint() {
         puntosPlayer++;

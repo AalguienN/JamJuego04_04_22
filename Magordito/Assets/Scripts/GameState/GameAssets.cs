@@ -5,20 +5,22 @@ using UnityEngine;
 public class GameAssets : MonoBehaviour
 {
     [Header("Objetos Corruptos")]
-    public GameObject[] objetosCorruptos;
+    public GameObject[] objetosCorruptos; //General
     public GameObject CalabazaC;
     public GameObject CalderoC;
     public GameObject MesaC;
     public GameObject PlantaC;
     public GameObject TelefonoC;
+    public GameObject SofaC;
 
     [Header("Objetos Normales")]
-    public GameObject[] objetosNormales;
+    public GameObject[] objetosNormales; //General
     public GameObject CalabazaN;
     public GameObject CalderoN;
     public GameObject MesaN;
     public GameObject PlantaN;
     public GameObject TelefonoN;
+    public GameObject SofaN;
     private void Awake()
     {
         objetosCorruptos = new GameObject[5];
@@ -27,7 +29,7 @@ public class GameAssets : MonoBehaviour
         objetosCorruptos[2] = MesaC;
         objetosCorruptos[3] = PlantaC;
         objetosCorruptos[4] = TelefonoC;
-    objetosNormales = new GameObject[5];
+        objetosNormales = new GameObject[5];
         objetosNormales[0] = CalabazaN;
         objetosNormales[1] = CalderoN;
         objetosNormales[2] = MesaN;

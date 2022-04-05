@@ -21,8 +21,8 @@ public class fantasmaComportamiento : MonoBehaviour
         if (transform.position.y < -2.5) { changeDir(); dir.y = Random.Range(1, 4); }
         if (transform.position.y > 15) { changeDir();  dir.y = Random.Range(-3, 0); }
         if (transform.position.z > 0) { dir.z = -1; }
-        if (transform.position.x > 0) { dir.x -= 1; }
-        if (transform.position.x < 0) { dir.x += 1; }
+        if (transform.position.x > 40) { dir.x -= 1; }
+        if (transform.position.x < -40) { dir.x += 1; }
         else if (dir.z < 0 && transform.position.z <= 0) { dir.z = 0; }
         transform.Translate(dir * Time.deltaTime * speed);
     }

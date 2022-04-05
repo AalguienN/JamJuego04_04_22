@@ -30,6 +30,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.9919892, y: 7.7328224, z: -10.795539}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -50,7 +51,7 @@ MonoBehaviour:
   settingss: {fileID: 0}
   panel: {fileID: 0}
   vidasMax: 3
-  pointsToWin: 0
+  pointsToWin: 3
 --- !u!114 &1159890250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,12 +82,14 @@ MonoBehaviour:
   MesaC: {fileID: 5054422058989880602, guid: 1f07418b22242ca43817839d8678faf7, type: 3}
   PlantaC: {fileID: 8720830133980203600, guid: 0ccb608cf466d0348b7708b6b14bb0ef, type: 3}
   TelefonoC: {fileID: 756394719486230028, guid: e43398f432a970648b7c7ada997cc2af, type: 3}
+  SofaC: {fileID: 4663998481198338801, guid: 12370d93effd06844903a17d1bb9f8f9, type: 3}
   objetosNormales: []
   CalabazaN: {fileID: 6082613492392591474, guid: 008481d3e7fecc44eb0d6a71af612aea, type: 3}
   CalderoN: {fileID: 7900724720643314258, guid: dcdea3eb9552ce04696dabf57175de11, type: 3}
   MesaN: {fileID: 6198712085270158039, guid: 6bfb8810c96009d4b9d52618b3cd4184, type: 3}
   PlantaN: {fileID: 7568441277126066159, guid: 6b67741a44c85d946930bc84ab96cb38, type: 3}
   TelefonoN: {fileID: 7315863729460928237, guid: 7b3faca85e0bafe4fb5fe5d24b24f3ff, type: 3}
+  SofaN: {fileID: 2644532661692532939, guid: bda5057aa1e80eb46afe6edb529b5f7e, type: 3}
 --- !u!114 &1198727680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,3 +107,4 @@ MonoBehaviour:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 0}
+  sofaPos: {x: 0, y: 0, z: 0}

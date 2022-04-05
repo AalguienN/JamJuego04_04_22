@@ -169,7 +169,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.127413, y: 1}
+    m_SensorSize: {x: 1.3333334, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -536,6 +536,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5809194997658902377, guid: f2aae737f6044a44fac3e833de5167ca, type: 3}
+      propertyPath: SofaN
+      value: 
+      objectReference: {fileID: 2644532661692532939, guid: bda5057aa1e80eb46afe6edb529b5f7e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2aae737f6044a44fac3e833de5167ca, type: 3}
 --- !u!1 &1131233558
