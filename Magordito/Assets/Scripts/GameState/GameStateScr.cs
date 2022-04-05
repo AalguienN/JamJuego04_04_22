@@ -87,7 +87,10 @@ public class GameStateScr : MonoBehaviour
 
             PlayerPrefs.SetInt("highscore", highscore);
         }
+        Time.timeScale = 1;
+        SceneManager.UnloadScene(1);
         SceneManager.LoadScene(0);
+        
     }
     public void settings()
     {
