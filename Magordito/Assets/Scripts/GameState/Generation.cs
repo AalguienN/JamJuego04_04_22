@@ -34,7 +34,7 @@ public class Generation : MonoBehaviour
         if (rand(4))
         {
             Instantiate(ga.PercheroC, percheroPos, new Quaternion(0, 0, 0, 0));
-            numOC--;
+            //numOC--;
         }
         else
         {
@@ -47,7 +47,7 @@ public class Generation : MonoBehaviour
     void Generate() {
         objetosCargados = new GameObject[objPositions.Length];
         for (int i = 0; i < objPositions.Length; i++) {
-            if (Random.Range(0, 2) == 1 && numOC > 0 || i+numOC+1>=objPositions.Length)
+            if (Random.Range(0, 2) == 1 && numOC > 0 || i+numOC>=objPositions.Length)
             {
                 Instantiate(gameObject.GetComponent<GameAssets>().objetosCorruptos[Random.Range(0, gameObject.GetComponent<GameAssets>().objetosCorruptos.Length)], objPositions[i], new Quaternion(0, 0, 0, 0));
                 numOC--;

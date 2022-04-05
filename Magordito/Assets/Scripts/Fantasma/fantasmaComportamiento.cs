@@ -22,8 +22,8 @@ public class fantasmaComportamiento : MonoBehaviour
     void Update()
     {
         if (Vector3.Distance(player.transform.position, this.transform.position) > 30) { changeDir(); }
-        if (transform.position.y < -2.5) { changeDir(); dir.y = Random.Range(1, 4); }
-        if (transform.position.y > 15) { changeDir();  dir.y = Random.Range(-3, 0); }
+        if (transform.position.y < -2.5) { changeDir(); dir.y = Random.Range(1, 3); }
+        if (transform.position.y > 15) { changeDir();  dir.y = Random.Range(-2, 0); }
         if (transform.position.z > 0) { dir.z = -1; }
         if (transform.position.x > 40) { dir.x -= 1; }
         if (transform.position.x < -40) { dir.x += 1; }
@@ -32,7 +32,7 @@ public class fantasmaComportamiento : MonoBehaviour
     }
 
     private void changeDir() {
-        dir = new Vector3(Random.Range(-3, 4), Random.Range(-3, 4), 0);
+        dir = new Vector3(Random.Range(-2, 3), Random.Range(-2, 3), 0);
     }
     public void OnClick() {
         hp--;

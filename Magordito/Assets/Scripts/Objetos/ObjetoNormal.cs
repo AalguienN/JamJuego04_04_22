@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjetoNormal : MonoBehaviour
 {
+    public GameObject objRoto;
     private GameStateScr gs;
     private void Start()
     {
@@ -14,6 +15,8 @@ public class ObjetoNormal : MonoBehaviour
     public void OnClick()
     {
         Debug.Log("Te has equivocado");
+        Instantiate(objRoto, transform.position, transform.rotation);
         gs.damagePlayer();
+        Destroy(gameObject);
     }
 }
