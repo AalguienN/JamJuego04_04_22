@@ -13,7 +13,7 @@ public class ObjetoCorrompidoScr : MonoBehaviour
     
     public void OnClick()
     {
-        Debug.Log("Lo has encontrado");
+        //Debug.Log("Lo has encontrado");
         
         Instantiate(fantasma, transform.position, transform.rotation);
         Destroy(this.gameObject);

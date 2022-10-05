@@ -32,11 +32,11 @@ public class clickChecker : MonoBehaviour
                             hit.collider.gameObject.GetComponent<fantasmaComportamiento>().OnClick();
                             break;
                         default:
-                            Debug.Log("Ray Cast : Objeto SinTag");
+                            //Debug.Log("Ray Cast : Objeto SinTag");
                             break;
 
                     }
-                    Debug.Log(gm.getVidaPlayer() + "::::" + gm.getPoints() + "/" + gm.pointsToWin); ///Linea COMENTABLE AAAAAAAAAAAAAAAA
+                    //Debug.Log(gm.getVidaPlayer() + "::::" + gm.getPoints() + "/" + gm.pointsToWin); ///Linea COMENTABLE AAAAAAAAAAAAAAAA
                 }
             }
         }

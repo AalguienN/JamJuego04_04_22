@@ -22,7 +22,7 @@ public class Menú : MonoBehaviour
     public void LoadScene()
     {
         SceneManager.UnloadScene(0);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Solo");
         
     }
     public void settings()

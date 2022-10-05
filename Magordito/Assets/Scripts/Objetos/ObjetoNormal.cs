@@ -14,7 +14,7 @@ public class ObjetoNormal : MonoBehaviour
    
     public void OnClick()
     {
-        Debug.Log("Te has equivocado");
+        //Debug.Log("Te has equivocado");
         Instantiate(objRoto, transform.position, transform.rotation);
         gs.damagePlayer();
         Destroy(gameObject);
